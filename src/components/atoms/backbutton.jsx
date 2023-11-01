@@ -1,12 +1,10 @@
 'use client'
-import { useRouter } from "next/navigation";
 import React,{ useEffect, useState } from "react";
 import '../style.css'
 import Arrow from '@/../../public/Images/arrow.png'
 import Image from "next/image";
 
 const BackButton = () => {
-  const router = useRouter();
   const [showButton, setShowButton] = useState(false);
 
   useEffect(() => {

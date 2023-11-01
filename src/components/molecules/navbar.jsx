@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect } from "react";
+import React from "react";
 import Logo from "@/../../public/Images/logo.png";
 import Image from "next/image";
 import Link from "next/link";
@@ -20,10 +20,6 @@ const style = {
   boxShadow: 24,
   p: 4,
 };
-
-// const modalBox = {
-//   backgroundColor: "#181D2B",
-// }
 
 const stylebtn = {
   color: "#fff",
@@ -54,16 +50,6 @@ const Navbar = () => {
     // Set the success message state variable
     setSuccessMessage("Your message has been sent successfully!");
   };
-
-  // const ul = document.querySelector("ul");
-
-  // useEffect(() => {
-  //   if (ul) {
-  //     ul.addEventListener("load", () => {
-  //       ul.classList.remove("block");
-  //     });
-  //   }
-  // }, [ul]);
 
   return (
     <div

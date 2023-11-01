@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import Box from "@mui/material/Box";
-import Button from '@mui/material/Button';
+import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 
@@ -14,45 +14,56 @@ const style = {
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
-  width: 400,
-  bgcolor: "background.paper",
-  borderRaduis: '20px',
+  width: '80%',
+  bgcolor: "#181D2B",
+  borderRaduis: "30px",
   boxShadow: 24,
   p: 4,
 };
 
+// const modalBox = {
+//   backgroundColor: "#181D2B",
+// }
+
 const stylebtn = {
-  color: '#181D2B',
-  bgcolor: "white",
+  color: "#fff",
+  backgroundColor: "#181D2B",
   borderRaduis: "20px",
+  border: "2px solid #222",
   boxShadow: 24,
   "&:hover": {
     backgroundColor: "#f5f5f5",
+    color: "#181D2B",
   },
 };
-
-
-
 
 const Navbar = () => {
   const [show, setShow] = useState(false);
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+  const [successMessage, setSuccessMessage] = useState("");
 
   const handleShow = () => {
     setShow(!show);
   };
 
-  const ul = document.querySelector("ul");
+  const handleGetInTouch = () => {
+    // Hide or remove the modal
+    setOpen(false);
+    // Set the success message state variable
+    setSuccessMessage("Your message has been sent successfully!");
+  };
 
-  useEffect(() => {
-    if (ul) {
-      ul.addEventListener("load", () => {
-        ul.classList.remove("block");
-      });
-    }
-  }, [ul]);
+  // const ul = document.querySelector("ul");
+
+  // useEffect(() => {
+  //   if (ul) {
+  //     ul.addEventListener("load", () => {
+  //       ul.classList.remove("block");
+  //     });
+  //   }
+  // }, [ul]);
 
   return (
     <div
@@ -87,7 +98,9 @@ const Navbar = () => {
               Contact
             </Link>
           </li>
-          <Button onClick={handleOpen} sx={stylebtn}>Book a Meeting</Button>
+          <Button onClick={handleOpen} sx={stylebtn}>
+            Book a Meeting
+          </Button>
         </ul>
         <button
           className="w-10 cursor-pointer block lg:hidden z-10 mr-5"
@@ -105,14 +118,47 @@ const Navbar = () => {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-          <Typography id="modal-modal-title" variant="h6" component="h2">
-            Text in a modal
+          <Typography id="modal-modal-title" variant="h4" component="h2">
+            Get In Touch With Us.
           </Typography>
-          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-            Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+          <Typography id="modal-modal-description">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-5 justify-center items-center">
+              <input
+                type="text"
+                name="name"
+                placeholder="Your Name"
+                className="w-[100%] py-2 px-4 rounded-full bg-primary text-slate-400 border border-slate-300 focus:outline-slate-700 my-2"
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                className="w-[100%] py-2 px-4 rounded-full bg-primary text-slate-400 border border-slate-300 focus:outline-slate-700 my-2"
+              />
+              <input
+                type="number"
+                name="number"
+                placeholder="Your Phone Number"
+                className="w-[100%] py-2 px-4 rounded-full bg-primary text-slate-400 border border-slate-300 focus:outline-slate-700 my-2"
+              />
+              <input
+                type="text"
+                name="comany"
+                placeholder="Your Company"
+                className="w-[100%] py-2 px-4 rounded-full bg-primary text-slate-400 border border-slate-300 focus:outline-slate-700 my-2"
+              />
+            </div>
+              <textarea
+                name="message"
+                id="message"
+                placeholder="Enter your Message here..."
+                className="w-[100%] bg-primary text-slate-400 border border-slate-300 focus:outline-slate-700 my-2 rounded-md p-4"
+              ></textarea>
           </Typography>
+          <button onClose={handleGetInTouch} className="py-2 px-4 rounded-full bg-white text-primary border border-slate-300 focus:outline-slate-700">Get In Touch</button>
         </Box>
       </Modal>
+      {successMessage && <div className="success-message absolute top-0 left-0">{successMessage}</div>}
     </div>
   );
 };

@@ -26,7 +26,7 @@ const Introduction = () => {
         </p>
         <div className="flex flex-row justify-center items-center bg-[#6e7381ad] mt-5 rounded-full gap-5 lg:gap-10 w-[100%] lg:w-[600px]">
           <div className="text-center">
-            <p className="text-[15px] md:text-[30px]">100+</p>
+            <p className="text-[15px] md:text-[30px]">50+</p>
             <p className="text-[13px] md:text-[18px]">Clients</p>
           </div>
           <Image
@@ -37,7 +37,7 @@ const Introduction = () => {
             className="w-[2px] h-[60px]"
           />
           <div className="text-center">
-            <p className="text-[15px] md:text-[30px]">100+</p>
+            <p className="text-[15px] md:text-[30px]">20+</p>
             <p className="text-[13px] md:text-[18px]">projects</p>
           </div>
           <Image

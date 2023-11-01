@@ -18,7 +18,7 @@ const About = () => {
           <p className="text-[20px]">
             We are the most popular blockchain service provider with a good
             track record of 50+ web3 projects. We are dedicated to supporting
-            your crypto project's success. Whether you're an established project
+            your crypto projects success. Whether you are an established project
             or just starting, our team is here to help you thrive in the
             fast-paced world of cryptocurrencies.
           </p>

@@ -5,7 +5,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import Box from "@mui/material/Box";
-// import { Button } from "../atoms/button";
 import Button from '@mui/material/Button';
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
@@ -57,7 +56,7 @@ const Navbar = () => {
 
   return (
     <div
-      id="home"
+      id="landing"
       className="p-4 flex justify-between lg:justify-around items-center relative"
     >
       <Image
@@ -74,7 +73,7 @@ const Navbar = () => {
           } flex flex-col lg:flex-row fixed lg:pt-0 lg:relative h-[100%] w-[100%] top-0 bg-primary z-10 pt-20 left-0 lg:justify-center items-center gap-10`}
         >
           <li onClick={handleShow}>
-            <Link href={"#home"} className="hover:text-slate-400">
+            <Link href={"#landing"} className="hover:text-slate-400">
               Home
             </Link>
           </li>

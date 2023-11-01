@@ -1,5 +1,6 @@
 import About from '@/components/molecules/about';
 import Blog from '@/components/molecules/blog';
+import Contact from '@/components/molecules/contact';
 import Footer from '@/components/molecules/footer';
 import Introduction from '@/components/molecules/introduction';
 import Navbar from '@/components/molecules/navbar';
@@ -16,6 +17,7 @@ const Landing = () => {
             <About />
             <Offers />
             <Blog />
+            <Contact />
             <Footer />
         </div>
     )

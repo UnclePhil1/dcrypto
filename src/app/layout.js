@@ -5,8 +5,9 @@ import BackButton from "@/components/atoms/backbutton";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "D-Crypto",
+  title: "D'Crypto",
   description: "Web3 service Community",
+  icons: {icon: "../favicon.jpg"}
 };
 
 export default function RootLayout({ children }) {

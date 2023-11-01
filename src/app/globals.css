@@ -8,7 +8,10 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-body {
+
+
+html,body {
  background: #181D2B;
  color: white;
+ scroll-behavior: smooth;
 }

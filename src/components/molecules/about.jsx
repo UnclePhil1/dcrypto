@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <div>
+    <div id="about">
       <div className="p-4 w-[100%] min-h-[80vh] flex justify-center items-center background overflow-hidden">
         <Image
           src={Bg}

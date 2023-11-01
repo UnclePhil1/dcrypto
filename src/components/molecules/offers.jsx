@@ -18,7 +18,7 @@ import "@/components/style.css";
 
 const Offers = () => {
   return (
-    <div className="p-4 w-[100%] flex flex-col justify-center items-center background overflow-hidden">
+    <div id="contact" className="p-4 w-[100%] flex flex-col justify-center items-center background overflow-hidden">
       <div className="lg:w-[60%] text-center">
         <h1 className="text-[2.5em] font-semibold]">What We Offer</h1>
         <div className="gridlayout mt-10">
@@ -29,7 +29,7 @@ const Offers = () => {
               alt="Bg.png"
               width={700}
               height={300}
-              className="w-[200px] h-[200px]"
+              className="w-[250px] h-[150px]"
             />
           </div>
           <div className="p-4 rounded-md flex flex-col justify-center items-center border border-slate-200 hover:border-slate-600 bg-slate-700 h-[300px]">
@@ -39,7 +39,7 @@ const Offers = () => {
               alt="Bg.png"
               width={700}
               height={300}
-              className="w-[200px] h-[200px]"
+              className="w-[250px] h-[150px]"
             />
           </div>
           <div className="p-4 rounded-md flex flex-col justify-center items-center border border-slate-200 hover:border-slate-600 bg-slate-700 h-[300px]">
@@ -49,7 +49,7 @@ const Offers = () => {
               alt="Bg.png"
               width={700}
               height={300}
-              className="w-[200px] h-[200px]"
+              className="w-[250px] h-[150px]"
             />
           </div>
           <div className="p-4 rounded-md flex flex-col justify-center items-center border border-slate-200 hover:border-slate-600 bg-slate-700 h-[300px]">
@@ -59,7 +59,7 @@ const Offers = () => {
               alt="Bg.png"
               width={700}
               height={300}
-              className="w-[200px] h-[200px]"
+              className="w-[250px] h-[150px]"
             />
           </div>
           <div className="p-4 rounded-md flex flex-col justify-center items-center border border-slate-200 hover:border-slate-600 bg-slate-700 h-[300px]">
@@ -69,7 +69,7 @@ const Offers = () => {
               alt="Bg.png"
               width={700}
               height={300}
-              className="w-[200px] h-[200px]"
+              className="w-[250px] h-[150px]"
             />
           </div>
           <div className="p-4 rounded-md flex flex-col justify-center items-center border border-slate-200 hover:border-slate-600 bg-slate-700 h-[300px]">
@@ -79,7 +79,7 @@ const Offers = () => {
               alt="Bg.png"
               width={700}
               height={300}
-              className="w-[200px] h-[200px]"
+              className="w-[250px] h-[150px]"
             />
           </div>
         </div>

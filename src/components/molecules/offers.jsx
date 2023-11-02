@@ -20,7 +20,7 @@ import Link from "next/link";
 const Offers = () => {
   return (
     <div
-      id="contact"
+      id="services"
       className="p-4 w-[100%] flex flex-col justify-center items-center background overflow-hidden"
     >
       <div className="lg:w-[60%] text-center">
@@ -88,14 +88,14 @@ const Offers = () => {
           </div>
         </div>
       </div>
-      <div className="w-[80%] lg:w-[100%] flex justify-center items-center gap-10 overflow-x-auto mt-[10%]">
-        <Link href="https://t.me/xhashtagio" className="cursor-pointer">
+      <div className="w-[100%] grid grid-cols-3 md:grid-cols-7 justify-center lg:gap-8 items-center overflow-x-auto mt-[10%] whitespace-nowrap">
+        <Link href="https://t.me/xhashtagio" className="cursor-pointer w-[100px] h-[100px] lg:w-[80px] lg:h-[80px]">
           <Image
             src={One}
             alt="Bg.png"
             width={700}
             height={300}
-            className="w-[80px] h-[80px]"
+            className="w-[100%] h-[100%]"
           />
         </Link>
         <Image
@@ -103,15 +103,15 @@ const Offers = () => {
           alt="Bg.png"
           width={700}
           height={300}
-          className="w-[20px] h-[30px]"
+          className="w-[20px] h-[30px] mx-auto"
         />
-        <Link href="https://t.me/faithtribe" className="cursor-pointer">
+        <Link href="https://t.me/faithtribe" className="cursor-pointer w-[100px] h-[100px] lg:w-[80px] lg:h-[80px]">
           <Image
             src={Two}
             alt="Bg.png"
             width={700}
             height={300}
-            className="w-[80px] h-[80px]"
+            className="w-[100%] h-[100%]"
           />
         </Link>
         <Image
@@ -119,15 +119,15 @@ const Offers = () => {
           alt="Bg.png"
           width={700}
           height={300}
-          className="w-[20px] h-[30px]"
+          className="w-[20px] h-[30px] mx-auto"
         />
-        <Link href="https://t.me/BoldPawCeo_Global" className="cursor-pointer">
+        <Link href="https://t.me/BoldPawCeo_Global" className="cursor-pointer w-[100px] h-[100px] lg:w-[80px] lg:h-[80px]">
           <Image
             src={Three}
             alt="Bg.png"
             width={700}
             height={300}
-            className="w-[80px] h-[80px]"
+            className="w-[100%] h-[100%]"
           />
         </Link>
         <Image
@@ -135,15 +135,15 @@ const Offers = () => {
           alt="Bg.png"
           width={700}
           height={300}
-          className="w-[20px] h-[30px]"
+          className="w-[20px] h-[30px] mx-auto"
         />
-        <Link href="https://t.me/gummys_io" className="cursor-pointer">
+        <Link href="https://t.me/gummys_io" className="cursor-pointer w-[100px] h-[100px] lg:w-[80px] lg:h-[80px]">
           <Image
             src={Four}
             alt="Bg.png"
             width={700}
             height={300}
-            className="w-[80px] h-[80px]"
+            className="w-[100%] h-[100%]"
           />
         </Link>
         <Image
@@ -151,15 +151,15 @@ const Offers = () => {
           alt="Bg.png"
           width={700}
           height={300}
-          className="w-[20px] h-[30px]"
+          className="w-[20px] h-[30px] mx-auto"
         />
-        <Link href="https://t.me/pepeclassicversion" className="cursor-pointer">
+        <Link href="https://t.me/pepeclassicversion" className="cursor-pointer w-[100px] h-[100px] lg:w-[80px] lg:h-[80px]">
           <Image
             src={Five}
             alt="Bg.png"
             width={700}
             height={300}
-            className="w-[80px] h-[80px]"
+            className="w-[100%] h-[100%]"
           />
         </Link>
         <Image
@@ -167,15 +167,15 @@ const Offers = () => {
           alt="Bg.png"
           width={700}
           height={300}
-          className="w-[20px] h-[30px]"
+          className="w-[20px] h-[30px] mx-auto"
         />
-        <Link href="https://t.me/RangersProtocol" className="cursor-pointer">
+        <Link href="https://t.me/RangersProtocol" className="cursor-pointer w-[100px] h-[100px] lg:w-[80px] lg:h-[80px]">
           <Image
             src={Six}
             alt="Bg.png"
             width={700}
             height={300}
-            className="w-[80px] h-[80px]"
+            className="w-[100%] h-[100%]"
           />
         </Link>
         <Image
@@ -183,15 +183,15 @@ const Offers = () => {
           alt="Bg.png"
           width={700}
           height={300}
-          className="w-[20px] h-[30px]"
+          className="w-[20px] h-[30px] mx-auto"
         />
-        <Link href="https://t.me/MultiBank_io" className="cursor-pointer">
+        <Link href="https://t.me/MultiBank_io" className="cursor-pointer w-[100px] h-[100px] lg:w-[80px] lg:h-[80px]">
           <Image
             src={Seven}
             alt="Bg.png"
             width={700}
             height={300}
-            className="w-[80px] h-[80px]"
+            className="w-[100%] h-[100%]"
           />
         </Link>
       </div>

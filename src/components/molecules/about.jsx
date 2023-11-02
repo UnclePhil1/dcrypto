@@ -16,11 +16,9 @@ const About = () => {
         <div className="lg:w-[60%] text-center">
           <h1 className="text-[2.5em] font-semibold]">About Us</h1>
           <p className="text-[20px]">
-            We are the most popular blockchain service provider with a good
-            track record of 50+ web3 projects. We are dedicated to supporting
-            your crypto projects success. Whether you are an established project
-            or just starting, our team is here to help you thrive in the
-            fast-paced world of cryptocurrencies.
+            Our vision is to help projects that have 
+            problems with the usual high cost of marketing while
+            still giving them top-notch community Management services.
           </p>
         </div>
       </div>

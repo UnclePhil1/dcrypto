@@ -30,7 +30,7 @@ const Blog = () => {
                   className="w-[100%] h-[100%]"
                 />
                 <div className="bg-slate-700 rounded-br-md rounded-bl-md flex flex-col justify-start items-start p-2 gap-4">
-                  <h3 className="text-start">Ultimate Brand Building</h3>
+                  <h3 className="text-start text-white">Ultimate Brand Building</h3>
                   <p className="text-[15px] text-slate-300">19 April 2023</p>
                 </div>
               </div>
@@ -43,7 +43,7 @@ const Blog = () => {
                   className="w-[100%] h-[100%]"
                 />
                 <div className="bg-slate-700 rounded-br-md rounded-bl-md flex flex-col justify-start items-start p-2 gap-4">
-                  <h3 className="text-start">Introduction to Blockchain</h3>
+                  <h3 className="text-start text-white">Introduction to Blockchain</h3>
                   <p className="text-[15px] text-slate-300">23 August 2023</p>
                 </div>
               </div>
@@ -56,7 +56,7 @@ const Blog = () => {
                   className="w-[100%] h-[100%]"
                 />
                 <div className="bg-slate-700 rounded-br-md rounded-bl-md flex flex-col justify-start items-start p-2 gap-4">
-                  <h3 className="text-start">NFT Trading and Minting</h3>
+                  <h3 className="text-start text-white">NFT Trading and Minting</h3>
                   <p className="text-[15px] text-slate-300">1 May 2023</p>
                 </div>
               </div>

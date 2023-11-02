@@ -5,17 +5,18 @@ import Bg from "@/../../public/Images/bg.png";
 import Image from "next/image";
 import { Button } from "../atoms/button";
 import { TransButton } from "../atoms/transButton";
+import Link from "next/link";
 
 const Introduction = () => {
   return (
-    <div className="p-4 w-[100%] min-h-[80vh] flex justify-center items-center background overflow-hidden">
-        <Image
-            src={Bg}
-            alt="Bg.png"
-            width={700}
-            height={300}
-            className="lg:w-[50%] lg:h-[80%] absolute top-[100px] left-[-30px] lg:left-[20%]"
-          />
+    <div className="p-4 w-[100%] min-h-[80vh] flex justify-center items-center overflow-hidden">
+      {/* <Image
+        src={Bg}
+        alt="Bg.png"
+        width={700}
+        height={300}
+        className="lg:w-[40%] lg:h-[70%] absolute top-[100px] left-[-30px] lg:left-[20%]"
+      /> */}
       <div className="text-center self-center flex flex-col justify-center items-center">
         <h1 className="text-[2em] lg:text-[4em] font-semibold">
           Elevate Your Crypto Progress
@@ -48,13 +49,17 @@ const Introduction = () => {
             className="w-[2px] h-[60px]"
           />
           <div className="text-center">
-            <p className="text-[15px] md:text-[30px]">50+</p>
+            <p className="text-[15px] md:text-[30px]">20+</p>
             <p className="text-[13px] md:text-[18px]">Employees</p>
           </div>
         </div>
         <div className=" flex gap-4 mt-5">
+          <Link href="#contact" className="z-[10]">
             <Button text="Contact Us" />
+          </Link>
+          <Link href="#services" className="z-10">
             <TransButton text="Services" />
+          </Link>
         </div>
       </div>
     </div>

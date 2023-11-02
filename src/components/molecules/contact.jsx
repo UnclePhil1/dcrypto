@@ -7,7 +7,7 @@ import { useState } from "react";
 
 const Contact = () => {
   return (
-    <div className="flex justify-center items-center my-10">
+    <div id="contact" className="flex justify-center items-center my-10">
       <div className="w-[80%] rounded-md bg-slate-900 p-4">
         <h2>Get In Touch With Us.</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5 justify-center items-center">

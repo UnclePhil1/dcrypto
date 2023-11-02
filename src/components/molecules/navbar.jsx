@@ -67,7 +67,7 @@ const Navbar = () => {
         <ul
           className={`${
             show ? "block" : "hidden lg:flex"
-          } flex flex-col lg:flex-row fixed lg:pt-0 lg:relative h-[100%] w-[100%] top-0 bg-primary z-10 pt-20 left-0 lg:justify-center items-center gap-10`}
+          } flex flex-col lg:flex-row fixed lg:pt-0 lg:relative h-[100%] w-[100%] top-0 bg-primary z-20 pt-20 left-0 lg:justify-center items-center gap-10`}
         >
           <li onClick={handleShow}>
             <Link href={"#landing"} className="hover:text-slate-400">
@@ -89,7 +89,7 @@ const Navbar = () => {
           </Button>
         </ul>
         <button
-          className="w-10 cursor-pointer block lg:hidden z-10 mr-5"
+          className="w-10 cursor-pointer block lg:hidden z-20 mr-5"
           onClick={handleShow}
         >
           <div className="w-8 h-1 bg-white m-2 rounded-md"></div>

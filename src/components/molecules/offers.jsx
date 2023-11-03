@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import First from "@/../../public/Images/first.png";
 import Content from "@/../../public/Images/content.png";
@@ -16,8 +17,64 @@ import Stroke from "@/../../public/Images/stroke.png";
 import Image from "next/image";
 import "@/components/style.css";
 import Link from "next/link";
+import { useState } from "react";
 
 const Offers = () => {
+  const offerArray = [
+    {
+      header: "Community Management / Moderation",
+      url: First,
+      paragraph:
+        "Strengthen your project's online presence with our expert community managers. We'll ensure a vibrant and engaged community, fostering healthy discussions, and maintaining a positive atmosphere.",
+    },
+    {
+      header: "Community Engagement TG/ Discordn",
+      url: Social,
+      paragraph:
+        "Boost your project's engagement levels on Telegram and Discord. We'll create interactive and exciting experiences that keep your community active and involved.",
+    },
+    {
+      header: "Content Writing",
+      url: Content,
+      paragraph:
+        "Captivate your audience with compelling content. Our skilled writers will create informative articles, blog posts, and engaging social media content that showcases your project's unique value proposition.",
+    },
+    {
+      header: "Graphic Design / Web Development",
+      url: Web,
+      paragraph:
+        "Make your project visually appealing with our graphics designing services. Our talented designers will create eye-catching visuals, including logos, banners, infographics, and other graphical elements.",
+    },
+    {
+      header: "Social Media Management",
+      url: Media,
+      paragraph:
+        " Enhance your online presence across various social media platforms. Our experienced team will handle content creation, scheduling, engagement, and growth strategies.",
+    },
+    {
+      header: "Shilling/ X and TG followers",
+      url: Links,
+      paragraph:
+        "Expand your social media reach and grow your Telegram group with our follower acquisition services. We'll help you gain real, active followers who are genuinely interested in your project.",
+    },
+  ];
+
+  const [hoveredStates, setHoveredStates] = useState(
+    Array(offerArray.length).fill(false)
+  );
+
+  const handleMouseEnter = (index) => {
+    const newHoveredStates = [...hoveredStates];
+    newHoveredStates[index] = true;
+    setHoveredStates(newHoveredStates);
+  };
+
+  const handleMouseLeave = (index) => {
+    const newHoveredStates = [...hoveredStates];
+    newHoveredStates[index] = false;
+    setHoveredStates(newHoveredStates);
+  };
+
   return (
     <div
       id="services"
@@ -26,102 +83,29 @@ const Offers = () => {
       <div className="lg:w-[60%] text-center">
         <h1 className="text-[2.5em] font-semibold]">What We Offer</h1>
         <div className="gridlayout mt-10">
-          <div className="p-4 rounded-md flex flex-col justify-center items-start border border-slate-200 hover:border-slate-600 bg-slate-700 h-[300px]">
-            <Image
-              src={First}
-              alt="Bg.png"
-              width={700}
-              height={300}
-              className="w-[100px] h-[100px]"
-            />
-            <h1 className="text-start mt-5 font-semibold mb-2">
-              Community Management / Moderation
-            </h1>
-            <p className="text-slate-200 text-start text-[15px]">
-              We will ensure a vibrant and engaged community, fostering healthy
-              discussions, and maintaining a positive atmosphere.
-            </p>
-          </div>
-          <div className="p-4 rounded-md flex flex-col justify-center items-start border border-slate-200 hover:border-slate-600 bg-slate-700 h-[300px]">
-            <Image
-              src={Social}
-              alt="Bg.png"
-              width={700}
-              height={300}
-              className="w-[130px] h-[100px]"
-            />
-            <h1 className="text-start mt-5 font-semibold mb-2">
-              Community Engagement TG/ Discord
-            </h1>
-            <p className="text-slate-200 text-start text-[15px]">
-              Boost your projects engagement levels on Telegram and Discord.
-              We will create interactive and exciting experiences.
-            </p>
-          </div>
-          <div className="p-4 rounded-md flex flex-col justify-center items-start border border-slate-200 hover:border-slate-600 bg-slate-700 h-[300px]">
-            <Image
-              src={Content}
-              alt="Bg.png"
-              width={700}
-              height={300}
-              className="w-[120px] h-[100px]"
-            />
-            <h1 className="text-start mt-5 font-semibold mb-2">
-              Content Writing
-            </h1>
-            <p className="text-slate-200 text-start text-[15px]">
-              Captivate your audience with compelling content. Our skilled
-              writers will create informative articles, blog posts etc.
-            </p>
-          </div>
-          <div className="p-4 rounded-md flex flex-col justify-center items-start border border-slate-200 hover:border-slate-600 bg-slate-700 h-[300px]">
-            <Image
-              src={Web}
-              alt="Bg.png"
-              width={700}
-              height={300}
-              className="w-[100px] h-[100px]"
-            />
-            <h1 className="text-start mt-5 font-semibold mb-2">
-              Graphic Design / Web Development
-            </h1>
-            <p className="text-slate-200 text-start text-[15px]">
-              Make your project visually appealing with our graphics designing
-              services.
-            </p>
-          </div>
-          <div className="p-4 rounded-md flex flex-col justify-center items-start border border-slate-200 hover:border-slate-600 bg-slate-700 h-[300px]">
-            <Image
-              src={Media}
-              alt="Bg.png"
-              width={700}
-              height={300}
-              className="w-[120px] h-[100px]"
-            />
-            <h1 className="text-start mt-5 font-semibold mb-2">
-              Social Media Management
-            </h1>
-            <p className="text-slate-200 text-start text-[15px]">
-              Our experienced team will handle content creation, scheduling,
-              engagement, and growth strategies
-            </p>
-          </div>
-          <div className="p-4 rounded-md flex flex-col justify-center items-start border border-slate-200 hover:border-slate-600 bg-slate-700 h-[300px]">
-            <Image
-              src={Links}
-              alt="Bg.png"
-              width={700}
-              height={300}
-              className="w-[150px] h-[100px]"
-            />
-            <h1 className="text-start mt-5 font-semibold mb-2">
-              Shilling/ X and TG followers
-            </h1>
-            <p className="text-slate-200 text-start text-[15px]">
-              Drive awareness and attract attention to your project with our
-              targeted shilling services.
-            </p>
-          </div>
+          {offerArray.map((offers, index) => (
+            <div
+              onMouseEnter={() => handleMouseEnter(index)}
+              onMouseLeave={() => handleMouseLeave(index)}
+              key={index}
+              className="relative p-4 rounded-md flex flex-col justify-center items-center border border-slate-200 hover:border-slate-600 bg-slate-700 h-[300px] overflow-hidden"
+            >
+              <Image
+                src={offers.url}
+                alt="Bg.png"
+                width={700}
+                height={300}
+                className="w-[120px] h-[120px]"
+              />
+              <h1 className="mt-5 font-semibold mb-2">
+                {offers.header}
+              </h1>
+              <p
+                className={`${hoveredStates[index] ? "top-0" : "top-[270px]"} text-white text-[18px] absolute bg-[#000000de] w-[100%] left-0 h-[100%] text-center flex justify-center items-center p-4 transition-all`}>
+                {offers.paragraph}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
       <div className="w-[100%] grid grid-cols-3 md:grid-cols-7 justify-center lg:gap-8 items-center overflow-x-auto mt-[10%] whitespace-nowrap">

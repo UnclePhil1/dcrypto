@@ -38,7 +38,7 @@ const Offers = () => {
               Community Management / Moderation
             </h1>
             <p className="text-slate-200 text-start text-[15px]">
-              We'll ensure a vibrant and engaged community, fostering healthy
+              We will ensure a vibrant and engaged community, fostering healthy
               discussions, and maintaining a positive atmosphere.
             </p>
           </div>
@@ -54,8 +54,8 @@ const Offers = () => {
               Community Engagement TG/ Discord
             </h1>
             <p className="text-slate-200 text-start text-[15px]">
-              Boost your project's engagement levels on Telegram and Discord.
-              We'll create interactive and exciting experiences.
+              Boost your projects engagement levels on Telegram and Discord.
+              We will create interactive and exciting experiences.
             </p>
           </div>
           <div className="p-4 rounded-md flex flex-col justify-center items-start border border-slate-200 hover:border-slate-600 bg-slate-700 h-[300px]">

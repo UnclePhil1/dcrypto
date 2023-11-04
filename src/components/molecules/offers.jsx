@@ -105,7 +105,7 @@ const Offers = () => {
                 height={300}
                 className="w-[120px] h-[100px]"
               />
-              <h1 className="mt-5 font-semibold mb-2">
+              <h1 className="mt-5 font-semibold mb-2 text-[1.2em]">
                 {offers.header}
               </h1>
               <p

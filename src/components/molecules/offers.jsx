@@ -59,20 +59,28 @@ const Offers = () => {
     },
   ];
 
-  const [hoveredStates, setHoveredStates] = useState(
-    Array(offerArray.length).fill(false)
-  );
+  // const [hoveredStates, setHoveredStates] = useState(
+  //   Array(offerArray.length).fill(false)
+  // );
 
+  // const handleMouseEnter = (index) => {
+  //   const newHoveredStates = [...hoveredStates];
+  //   newHoveredStates[index] = true;
+  //   setHoveredStates(newHoveredStates);
+  // };
+
+  // const handleMouseLeave = (index) => {
+  //   const newHoveredStates = [...hoveredStates];
+  //   newHoveredStates[index] = false;
+  //   setHoveredStates(newHoveredStates);
+  // };
+
+  const [hoveredIndex, setHoveredIndex] = useState(null);
   const handleMouseEnter = (index) => {
-    const newHoveredStates = [...hoveredStates];
-    newHoveredStates[index] = true;
-    setHoveredStates(newHoveredStates);
+    setHoveredIndex(index);
   };
-
-  const handleMouseLeave = (index) => {
-    const newHoveredStates = [...hoveredStates];
-    newHoveredStates[index] = false;
-    setHoveredStates(newHoveredStates);
+  const handleMouseLeave = () => {
+    setHoveredIndex(null);
   };
 
   return (
@@ -85,10 +93,10 @@ const Offers = () => {
         <div className="gridlayout mt-10">
           {offerArray.map((offers, index) => (
             <div
-              onMouseEnter={() => handleMouseEnter(index)}
-              onMouseLeave={() => handleMouseLeave(index)}
+            onMouseEnter={() => handleMouseEnter(index)}
+            onMouseLeave={handleMouseLeave}
               key={index}
-              className="relative p-4 rounded-md flex flex-col justify-center items-center border border-slate-200 hover:border-slate-600 bg-slate-700 h-[300px] overflow-hidden"
+              className={`relative p-4 rounded-md flex flex-col justify-center items-center border border-slate-200 hover:border-slate-600 bg-slate-700 h-[300px] overflow-hidden`}
             >
               <Image
                 src={offers.url}
@@ -101,7 +109,7 @@ const Offers = () => {
                 {offers.header}
               </h1>
               <p
-                className={`${hoveredStates[index] ? "top-0" : "top-[270px]"} text-white text-[18px] absolute bg-[#000000de] w-[100%] left-0 h-[100%] text-center flex justify-center items-center p-4 transition-all`}>
+                className={`${index === hoveredIndex ? "top-[0]" : "top-[280px]"} text-white text-[18px] absolute bg-[#000000de] w-[100%] left-0 h-[100%] text-center flex justify-center items-center p-4 transition-all`}>
                 {offers.paragraph}
               </p>
             </div>

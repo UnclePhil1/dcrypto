@@ -14,13 +14,6 @@ const About = () => {
             still giving them top-notch community Management services.
           </p>
         </div>
-        {/* <Image
-          src={AboutImg}
-          alt="AboutImg.png"
-          width={700}
-          height={300}
-          className="w-[100 %] h-[100  %]"
-        /> */}
       </div>
     </div>
   );

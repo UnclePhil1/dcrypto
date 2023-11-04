@@ -95,7 +95,7 @@ const Offers = () => {
                 alt="Bg.png"
                 width={700}
                 height={300}
-                className="w-[120px] h-[120px]"
+                className="w-[120px] h-[100px]"
               />
               <h1 className="mt-5 font-semibold mb-2">
                 {offers.header}

@@ -28,7 +28,7 @@ const Offers = () => {
         "Strengthen your project's online presence with our expert community managers. We'll ensure a vibrant and engaged community, fostering healthy discussions, and maintaining a positive atmosphere.",
     },
     {
-      header: "Community Engagement TG/ Discordn",
+      header: "Community Engagement TG/ Discord",
       url: Social,
       paragraph:
         "Boost your project's engagement levels on Telegram and Discord. We'll create interactive and exciting experiences that keep your community active and involved.",
